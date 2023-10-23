@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "homepage": "https://ganesh-6.github.io/Blog-Website/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +15,11 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "lodash": "^4.17.11",
-    "mongoose": "^6.5.2"
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "install": "^0.13.0",
+    "npm": "^10.2.1"
   }
 }
